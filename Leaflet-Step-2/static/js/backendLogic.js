@@ -1,6 +1,6 @@
 // Initialize & Create LayerGroups: earthquakes
-var earthquakes = new L.LayerGroup();
 var tectonicPlates = new L.LayerGroup();
+var earthquakes = new L.LayerGroup();
 
 // Earthquakes GeoJSON URL Variables
 var earthquakesDataURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
@@ -75,7 +75,7 @@ d3.json(earthquakesDataURL, function(earthquakeData) {
         };
     }
     
-    // Function to Determine Color of Marker Based on the Magnitude of the Earthquake
+    //Determine Color of Marker Based on the Magnitude of the Earthquake
     function selectColor(magnScale) {
         switch (true) {
         case magnScale > 5:
@@ -140,3 +140,4 @@ d3.json(earthquakesDataURL, function(earthquakeData) {
     // Add the Legend to the Map
     legend.addTo(myMap);
 });
+
