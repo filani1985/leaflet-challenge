@@ -36,16 +36,16 @@ Visualize an earthquake data set
     - Include popups that provide additional information about the earthquake when a marker is clicked
     - Create a legend that will provide context for the map data
 
-![](Images-data/EarthquakeMap.png)
+![](Images-data/img1.png)
 
 ### Level 2: More Data
 
 The USGS wants to plot a second data set on the map to illustrate the relationship between tectonic plates and seismic activity. Pull in a second data set and visualize it along side the original set of data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>
 
-![](Images-data/FaultLines.png)
+![](Images-data/img2.png)
 
 * Plot a second data set on the map
 * Add a number of base maps to choose from as well as separate out the two different data sets into overlays that can be turned on and off independently
 * Add layer controls to the map
 
-![](Images-data/EarthquakeFaultOverlay.png)
+![](Images-data/img3.png)
