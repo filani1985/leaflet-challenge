@@ -77,14 +77,19 @@ d3.json(earthquakesDataURL, function(earthquakeData) {
         switch (true) {
         case magnScale > 5:
             return "#581845";
+            
         case magnScale > 4:
             return "#900C3F";
+            
         case magnScale > 3:
             return "#C70039";
+            
         case magnScale > 2:
             return "#FF5733";
+            
         case magnScale > 1:
             return "#FFC300";
+            
         default:
             return "#DAF7A6";
         }
@@ -103,6 +108,7 @@ d3.json(earthquakesDataURL, function(earthquakeData) {
         }
     // Add earthquakeData to earthquakes LayerGroups 
     }).addTo(earthquakes);
+    
     // Add earthquakes Layer to the Map
     earthquakes.addTo(myMap);
 
@@ -116,9 +122,8 @@ d3.json(earthquakesDataURL, function(earthquakeData) {
         div.innerHTML += "<h3>Magnitude</h3>"
 
         for (var j = 0; j < magnitudeLevels.length; j++) {
-            div.innerHTML +=
-                '<i style="background: ' + selectColor(magnitudeLevels[j] + 1) + '"></i> ' +
-                magnitudeLevels[j] + (magnitudeLevels[j + 1] ? '&ndash;' + magnitudeLevels[j + 1] + '<br>' : '+');
+            div.innerHTML += '<i style="background: ' + selectColor(magnitudeLevels[j] + 1) + '"></i> ' +
+                	magnitudeLevels[j] + (magnitudeLevels[j + 1] ? '&ndash;' + magnitudeLevels[j + 1] + '<br>' : '+');
         }
 
         return div;
