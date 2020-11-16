@@ -1,36 +1,31 @@
-/* 
-* Visualizing-Data-with-Leaflet - CSS Style Sheet 
-*/
 
-/* Remove Default Margin & Padding From Body */
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-/* Set Map, Body & HTML to 100% of the Screen Size */
+.info {
+  background: #E5E7E9;
+  padding: 1px 9px;
+  border-radius: 5px;
+}
+
 #map,
 body,
 html {
   height: 100%;
 }
 
-/* Set Legend Style */
-.info {
-  padding: 1px 10px;
-  background: #E5E7E9;
-  border-radius: 5px;
+.legend i {
+  height: 21px;
+  width: 21px;
+  float: right;
+  margin-right: 11px;
+  opacity: 0.75;
 }
 
 .legend {
-  line-height: 25px;
+  line-height: 24px;
   color: #000000;
 }
 
-.legend i {
-  width: 20px;
-  height: 20px;
-  float: right;
-  margin-right: 10px;
-  opacity: 0.75;
-}
